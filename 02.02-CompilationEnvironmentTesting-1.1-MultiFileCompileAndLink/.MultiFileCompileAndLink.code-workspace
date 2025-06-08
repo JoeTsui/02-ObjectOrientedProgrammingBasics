@@ -1,0 +1,61 @@
+{
+
+	"folders": [
+		{ "path": "." }
+	],
+	
+	"settings": {
+		// 编辑器级的 C++ 头文件关联、样式、代码检查设置
+		"files.associations": {
+			"iostream": "cpp",
+			"vector": "cpp",
+			"string": "cpp",
+			"algorithm": "cpp",
+			"numeric": "cpp"
+		},
+
+		// 全局打开 Makefile Tools 的自动配置流程
+		"makefile.configureOnOpen": true,
+		
+		// 指定 make 程序
+		"makefile.makePath": "C:/MinGW/bin/make.exe",
+		
+		// 这里关键：动态以当前文件目录为扫描目标
+		"makefile.makeDirectory": "${workspaceFolder}",
+
+		// 定义两种构建配置：debug 和 release
+		"makefile.configurations": [
+			{
+				"name": "debug",
+				"makeArgs": ["DEBUG=1"],
+				"description": "带调试信息的构建"
+			},
+			{
+				"name": "release",
+				"makeArgs": ["OPTIMIZE=2"],
+				"description": "优化版构建"
+			}
+		],
+
+		// 定义调试时要运行的可执行文件及工作目录
+		"makefile.launchConfigurations": [
+			{
+				"cwd": "${workspaceFolder}",
+				"binaryPath": "${workspaceFolder}/main.exe",
+				"binaryArgs": []
+			},
+			{
+				"cwd": "d:\\3-Study\\1.0-ComputerScience\\01.0-Practise\\02-ObjectOrientedProgrammingBasics\\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink",
+				"binaryPath": "d:\\3-Study\\1.0-ComputerScience\\01.0-Practise\\02-ObjectOrientedProgrammingBasics\\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink\\main",
+				"binaryArgs": []
+			},
+			{
+				"cwd": "d:\\2-Study\\1.0-ComputerScience\\01.0-Practise\\02-ObjectOrientedProgrammingBasics\\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink",
+				"binaryPath": "d:\\2-Study\\1.0-ComputerScience\\01.0-Practise\\02-ObjectOrientedProgrammingBasics\\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink\\main",
+				"binaryArgs": []
+			}
+		]
+
+	}
+	
+}

@@ -1,0 +1,9 @@
+1、直接编译
+g++ .\02.02-CompilationEnvironmentTesting-1.0-MultiFileCompileAndLink-main.cpp '.\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-func-add.cpp' -o output.exe -这里第二个参数打了''的作用是，文件名中包含add关键字，引号将其注释
+
+2、分布编译
+g++ -c .\02.02-CompilationEnvironmentTesting-1.0-MultiFileCompileAndLink-main.cpp -o .\02.02-CompilationEnvironmentTesting-1.0-MultiFileCompileAndLink-main.o
+
+g++ -c '.\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-func-add.cpp' -o '.\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-func-add.o'
+
+g++ .\02.02-CompilationEnvironmentTesting-1.0-MultiFileCompileAndLink-main.o '.\02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-func-add.o' -o output.exe
