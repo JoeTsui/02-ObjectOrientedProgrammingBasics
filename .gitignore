@@ -1,9 +1,32 @@
-02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink/1.0-MultiFileCompileAndLink-main.o
-02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink/1.2-MultiFileCompileAndLink-func-add.o
-02.02-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink/main.exe
-02.03-TheExternKeyword/1.0-TheExternKeyword-main.o
-02.03-TheExternKeyword/1.2-num.o
-02.03-TheExternKeyword/main.exe
-02.04-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-UsingMake/1.0-MultiFileCompileAndLink-main.o
-02.04-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-UsingMake/1.2-MultiFileCompileAndLink-func-add.o
-02.04-CompilationEnvironmentTesting-1.1-MultiFileCompileAndLink-UsingMake/main.exe
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
